@@ -18,8 +18,6 @@ export default async function Home({ searchParams }: Props) {
     commands = await getAllContainerCommands(searchParams?.ct as string);
   }
 
-  console.log(searchParams.pm);
-
   return (
     <main className="flex-1 flex flex-col overflow-hidden">
       <div className="flex justify-between m-2 p-2 mb-0 items-center border rounded-lg">
