@@ -24,7 +24,7 @@ export default function CommandCard({ item }: CommandCardProps) {
   }
 
   return (
-    <Card className="p-4 max-w-sm min-w-80 flex justify-between">
+    <Card className="p-4 w-[318px] flex justify-between">
       <div className="flex flex-col gap-2">
         <div className="font-bold text-xl">{item.name}</div>
         <code className="language-bash">{item.usage}</code>
