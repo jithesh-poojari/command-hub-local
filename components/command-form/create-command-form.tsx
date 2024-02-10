@@ -73,7 +73,6 @@ export default function CreateCommand() {
   }, [form.watch("usage")]);
 
   async function onSubmit(data: CommandFormValues) {
-    console.log("Success!", data);
     try {
       const createdCommand = await createCommand(data);
       setOpen(false);
@@ -82,6 +81,7 @@ export default function CreateCommand() {
     } catch (error) {
       console.error("Error creating command:", error);
     }
+    form.reset();
   }
 
   return (
